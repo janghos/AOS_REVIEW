@@ -1,0 +1,144 @@
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D3D3D3"
+        android:orientation="vertical"
+        tools:context=".MyPage.MyPageActivity">
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="X"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:text="설정"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rad"
+            android:gravity="left"
+            android:padding="11dp"
+            android:text="로그인"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/loginSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:switchMinWidth="60dp"
+            android:switchPadding="230dp"
+            android:gravity="center"
+            android:text="자동 로그인 설정"
+            android:textColor="@color/black"
+            android:fontFamily="@font/custom_font_family"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rad"
+            android:gravity="left"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:text="알림 설정"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/pushSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:switchMinWidth="60dp"
+            android:switchPadding="230dp"
+            android:gravity="center"
+            android:text="PUSH 알림 설정"
+            android:textColor="@color/black"
+            android:fontFamily="@font/custom_font_family"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/pushList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            android:padding="11dp"
+            android:text="푸시 알림 목록 보기"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rad"
+            android:gravity="left"
+            android:padding="15dp"
+            android:text="버전 정보"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/version"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="left"
+                android:padding="11dp"
+                android:text="현재 버전"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/versionName"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right"
+                android:padding="11dp"
+                android:text=""
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rad"
+            android:gravity="left"
+            android:padding="15dp"
+            android:textSize="20dp"
+            android:text="문의하기"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/connectReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            android:padding="11dp"
+            android:text="문의글 작성하기"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="100dp"
+            android:text="로그아웃"
+            android:textSize="30dp"
+            android:fontFamily="@font/custom_font_family"
+            android:background="@drawable/rad_radius">
+        </Button>
+    </LinearLayout>
+</layout>

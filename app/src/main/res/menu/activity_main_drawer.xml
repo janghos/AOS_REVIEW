@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_main"
+                android:icon="@drawable/house"
+                android:title="메인" />
+        </group>
+        <group android:id="@+id/nav_group_main" android:visible="false">
+            <item
+                android:id="@+id/nav_home1"
+                android:title="소개" />
+            <item
+                android:id="@+id/nav_home2"
+                android:title="공지사항" />
+            <item
+                android:id="@+id/nav_home3"
+                android:title="게시판" />
+        </group>
+        <item
+            android:id="@+id/nav_mypage"
+            android:icon="@drawable/mypage"
+            android:title="마이페이지" />
+        <item
+            android:id="@+id/nav_gps"
+            android:icon="@drawable/placeholder"
+            android:title="지도" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="설정" />
+</menu>

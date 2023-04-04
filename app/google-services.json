@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "346335797762",
+    "firebase_url": "https://rad-project-cade4-default-rtdb.firebaseio.com",
+    "project_id": "rad-project-cade4",
+    "storage_bucket": "rad-project-cade4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346335797762:android:bd9331eac5280a1eca7d1b",
+        "android_client_info": {
+          "package_name": "com.jangho.rad_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346335797762-plednc397jgn2ta9vmaao03sql7ei9j2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jangho.rad_app",
+            "certificate_hash": "ae508bd2f7093c5432d7154bbe33ac81c563f286"
+          }
+        },
+        {
+          "client_id": "346335797762-ojsb43pkgd07dlg480l81rjbv7qakh88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgArIcA8eNFuZB4hKUux4DMp1s9xkcqt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346335797762-ojsb43pkgd07dlg480l81rjbv7qakh88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'//구글 서비스 플러그인
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.jangho.rad_app"
+        minSdk 21
+        targetSdk 33
+        versionCode 2
+        versionName "2.5.5" // retrofit api market  값 비교
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    // api 통신 위한 위한 Retrofit2
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    // Retrofit2에서 gson 사용을 위한 컨버터
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    // gson
+    implementation "com.google.code.gson:gson:2.8.6"
+    //인디케이터 사용 위해 추가해줌
+    implementation 'me.relex:circleindicator:2.1.6'
+    //tablayout, bottomNavigation 위함
+    implementation 'com.google.android.material:material:1.4.0'
+    //드로어 레이아웃
+    implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
+
+    //이미지
+    implementation 'com.github.bumptech.glide:glide:4.14.1'
+    //카드 뷰
+    implementation("androidx.cardview:cardview:1.0.0")
+
+
+    //바코드
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+
+    //구글 지도
+    // Google Map
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    // 위치 함수 사용 위해 추가
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    //비콘
+    implementation files('libs/minewBeaconAdmin.jar')
+
+    //파이어 베이스 클라우드 메시지
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.0.0'//푸시 알림
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+
+
+}
+apply plugin: 'com.google.gms.google-services' //파이어베이스 google 서비스

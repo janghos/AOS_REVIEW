@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".HomePage.Intro1Fragment">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/prj1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/prj2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:id="@+id/img3"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/prj3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:id="@+id/img4"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/prj4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:id="@+id/img5"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/prj5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:id="@+id/img6"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/prj6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:id="@+id/img7"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/prj7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"/>
+    </LinearLayout>
+</ScrollView>

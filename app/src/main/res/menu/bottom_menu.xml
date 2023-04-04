@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item_home"
+        android:enabled="true"
+        android:title="홈"
+        android:icon="@drawable/house"
+        app:showAsAction="always"/>
+    <item android:id="@+id/item_myPage"
+        android:enabled="true"
+        android:title="마이페이지"
+        android:icon="@drawable/mypage"
+        app:showAsAction="always"/>
+    <item android:id="@+id/item_gps"
+        android:enabled="true"
+        android:title="지도"
+        android:icon="@drawable/placeholder"
+        app:showAsAction="always"/>
+    <item android:id="@+id/item_setting"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:title="설정"
+        app:showAsAction="always"/>
+
+</menu>
