@@ -27,10 +27,7 @@ class Board3Fragment : Fragment() {
 
     private lateinit var v : View
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        Log.e("onAtt", "onAttach()")
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,15 +35,6 @@ class Board3Fragment : Fragment() {
     }
 
 
-    override fun onStart() {
-        super.onStart()
-        Log.e("Start", "start()")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.e("resume", "onResume()")
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -24,20 +24,6 @@ class Notice2Fragment : Fragment() {
         }
 
 
-        override fun onAttach(activity: Activity) {
-            super.onAttach(activity)
-            Log.e("onAtt", "onAttach()")
-        }
-
-        override fun onStart() {
-            super.onStart()
-            Log.e("Start", "start()")
-        }
-
-        override fun onResume() {
-            super.onResume()
-            Log.e("resume", "onResume()")
-        }
 
         override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,

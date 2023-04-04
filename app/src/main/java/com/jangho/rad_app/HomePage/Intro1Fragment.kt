@@ -19,28 +19,14 @@ class Intro1Fragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.e("onCreate", "onCreate()")
 
     }
-
-    override fun onAttach(activity: Activity) {
-        super.onAttach(activity)
-        Log.e("onAtt", "onAttach()")
-    }
-
-    override fun onStart() {
-        super.onStart()
-        Log.e("Start", "start()")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.e("resume", "onResume()")
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.e("onCreateView", "onCreateView()")
         // 뷰 생성시 인플레이트하여 해당 뷰를 생성해주고 지정해줌
         v = inflater.inflate(R.layout.fragment_intro1, container, false)
 
@@ -49,6 +35,7 @@ class Intro1Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        Log.e("onViewCreated", "onViewCreated()")
         // 1. json 파일을 문자열만으로 읽음
         val jsonString = view.context.assets.open("intro.json").reader().readText()
         // 2. JSONArray 로 파싱
@@ -112,7 +99,4 @@ class Intro1Fragment : Fragment() {
             }
         }
     }
-
-
-
 }
